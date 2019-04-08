@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOMEWORKS FEA-12</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src = "js/index111.js"></script>
+	<script src = "js/index112.js"></script>
+	<script src = "js/index113.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrapper">
+			<h1>Загревская Людмила <br>fea-12</h1>
+			<div class="exercise">
+				<h2> exercise 11.1</h2>
+				<p class = 'description bold'>
+					Предварительная подготовка: <br>Создать файл с данными в формате JSON
+				</p>
+				<p class = 'description'>
+				Это должен быть массив объектов с двумя свойствами: title и ref
+					<ul class = 'description'>
+						<li><span class="bold">title</span> - название картинки</li>
+						<li><span class="bold">ref</span>- ссылка на картинку</li>
+					</ul>
+				</p>
+				<p class = 'description bold'>Задание:
+					<ul class = 'description'>
+						<li>Загрузить данные из JSON-файла</li>
+						<li>Распарсить данные в массив</li>
+						<li>Вывести на страницу картинки и подписи к ним</li>
+					</ul>
+				</p>
+				<div class="result1"></div>
+				<button name = "btn" class="btn" onclick = "exercise1()"> Show result</button>
+			</div>
+
+			<div class="exercise">
+				<h2>exercise  11.2</h2>
+				<p class = 'description bold'>Исходные данные
+				</p>
+				<img src="images/Screenshot_1.png" alt="screen" class="screen">
+				<p class = 'description bold'> sendMessage
+				</p>
+				<img src="images/Screenshot_2.png" alt="screen" class="screen">
+				<p class = 'description'>Задача: напилить код, который вызывает функцию <span class="bold">sendMessage </span> для каждого элемента массива <span class="bold">messages</span> и логирует полученные сообщения в объекте <span class="bold">log</span> следующим образом:
+				</p>
+				<img src="images/Screenshot_3.png" alt="screen" class="screen">
+				<!-- <div class=".show-code, container">
+				</div> -->
+				<!-- <div class="result2"></div> -->
+				<button name = "btn" class="btn" onclick = "exercise2()"> Show result in console </button>
+			</div>
+			<div class="exercise">
+				<h2>exercise  11.3</h2>
+				<p class = 'description'>Изменим условие предыдущего задания <br>Массив messages, объект log и функция sendMessage остаются теми же <br>Немного изменится метод getKey:
+				</p>
+				<p class = 'description bold'>messages.getKey = () => new Date().toLocaleString().split(", ")[1]
+				</p>
+				<p class = 'description'>Нужно напилить код рекурсивной функции recursive, которая вызывает sendMessage поочередно с каждым элементом массива messages, но только после того, как предыдущий месседж будет залогирован в объекте log </p>
+				<img src="images/Screenshot_4.png" alt="screen" class="screen">
+				
+				<!-- <div class="result3"></div> -->
+				<button name = "btn" class="btn" onclick = "exercise3()"> Show result in console</button>
+			</div>
+		</div>
+</body>
+</html>
