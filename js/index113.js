@@ -1,4 +1,4 @@
-function exercise3 (event) {
+
 
 	var messages = [
 	    "backspace",
@@ -32,8 +32,7 @@ function exercise3 (event) {
 	                        { [ messages.getKey() ] : response }
 	                    )
 	            		recursive ()
-	            		console.log (log)
-					}
+	            	}
 				) 
 	    }
 	    recursive ()
@@ -42,4 +41,6 @@ function exercise3 (event) {
 	sendAll()
 
 	// console.log (log)
+function exercise3 (event) {
+	console.log (log)
 }
