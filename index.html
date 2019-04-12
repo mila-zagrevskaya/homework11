@@ -36,8 +36,36 @@
 						<li>Вывести на страницу картинки и подписи к ним</li>
 					</ul>
 				</p>
+				<textarea class= "show-code" rows = "25" disabled="disabled">
+var response = ""
+
+var request = new XMLHttpRequest ()
+request.open ( 
+	'GET', 
+	'http://ptsv2.com/t/jstestcourse/d/294170275/json'
+	)
+request.onload = function ( event ) {
+	response = this.response
+}
+request.send()
+
+var fileJson = JSON.parse (response)
+var file = JSON.parse (fileJson.Body)
+
+file.forEach (
+	function (item) {
+		var elem = document.createElement ("img")
+		elem.style = `width: 200px; height: 133.33px`
+		elem.src = item.ref
+		elem.title = item.title
+		document.body.appendChild (elem)
+	}
+)
+				</textarea>
+				<p class="description"> * только на PTS2.com</p>
 				<div class="result1"></div>
 				<button name = "btn" class="btn" onclick = "exercise1()"> Show result</button>
+				
 			</div>
 
 			<div class="exercise">

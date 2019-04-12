@@ -67,12 +67,16 @@ h2 {
 	width: 100%;
 	min-height: 100px;
 	border: 2px inset #ff0248;
-	background-color: #afe2f5;
+	background-color: #212b2f;
 	color: #fff;
 	font-size: 14px;
 	z-index: 10;
 }
-
+.show-code {
+	resize: none;
+	text-align: justify;
+	padding: 15px 10px 15px 35px;
+}
 
 .btn {
 	display: inline-block;
