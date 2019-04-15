@@ -42,16 +42,18 @@ function exercise1 (event) {
 */
 
 // Вариант 2
- const loadData = fetch ('data.json')
+
+
 function exercise1 (event) {
-	loadData.then(
-		response => response.json()
+	fetch ('data.json')
+	.then(
+		response => response.JSON()
 		.then (
 			response => response.forEach (
 				item => document.querySelector(".result1").appendChild (document.createElement("img")).src = item.ref
-				)
 			)
 		)
+	)
 }
 
 
