@@ -45,9 +45,9 @@ function exercise1 (event) {
 
 
 function exercise1 (event) {
-	fetch ('data.json')
+	fetch ('data.json', {mode: "cors"})
 	.then(
-		response => response.JSON()
+		response => response.json()
 		.then (
 			response => response.forEach (
 				item => document.querySelector(".result1").appendChild (document.createElement("img")).src = item.ref
