@@ -38,10 +38,10 @@ function logMess () {
 	}
 	sendAll()
 
-
-	function exercise3 (event) {
+function exercise3 (event) {
 		console.log (log)
 	}
+	
 }
 
 
