@@ -45,7 +45,7 @@ function exercise1 (event) {
 
 
 function exercise1 (event) {
-  fetch ('data.json')
+  fetch ('../data.json')
     .then(
 	  response => response.json()
 		.then (
