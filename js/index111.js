@@ -45,7 +45,7 @@ function exercise1 (event) {
 
 
 function exercise1 (event) {
-  fetch ('data.json')
+  fetch ('https://github.com/mila-zagrevskaya/homework11/blob/master/js/data.json')
     .then(
 	  response => response.json()
 		.then (
