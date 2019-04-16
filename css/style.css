@@ -77,6 +77,8 @@ h2 {
 .show-code1,
 .show-code2,
 .show-code3 {
+	white-space: pre-wrap;
+	overflow: auto;
 	resize: none;
 	text-align: justify;
 	padding: 15px 10px 15px 35px;
