@@ -1,17 +1,13 @@
-function logMess () {
+// function exercise3 (event) {
 	var messages = [
-	"backspace",
-	"enter",
-	"shift",
-	"control",
-	"delete",
-	"space",
-	"subtract"
+		"backspace",
+		"enter",
+		"shift",
+		"control",
+		"delete",
+		"space",
+		"subtract"
 	]
-
-	messages.getKey = () => new Date().toLocaleString().split(", ")[1]
-
-	var log = {}
 
 	var sendMessage = message => new Promise (
 		resolve => setTimeout (
@@ -20,32 +16,27 @@ function logMess () {
 			)
 		)
 
-	var sendAll = () => {
+	var sendAll = (promise = () => new Promise ( () => {} ), messages = []) => {
+		const getKey = () => new Date().toLocaleString().split(", ")[1]
+		const log = {}
 		var index = 0
 		function recursive () {
-			sendMessage ( messages [ index++ ] )
+			promise  ( messages [ index++ ] )
 			.then (
-				response => {
-					if ( !response ) return
-						Object.assign ( log,
-							{ [ messages.getKey() ] : response }
-							)
-					recursive ()
-				}
-				) 
+				response => response ? log[getKey()] = response :null
+			) 
+			index >= messages.length ? null : recursive ()
 		}
 		recursive ()
+		return log
 	}
-	sendAll()
-}
+	let log = sendAll (sendMessage, messages)
 
-
+// }
 	function exercise3 (event) {
 		console.log (log)
 	}
 
-
-
-function showCode(param1, param2){
-	document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
+// function showCode(param1, param2){
+// 	document.querySelector(param2).innerHTML = param1.toLocaleString()
+// }
