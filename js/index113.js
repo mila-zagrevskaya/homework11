@@ -37,13 +37,12 @@ function logMess () {
 		recursive ()
 	}
 	sendAll()
-
-function exercise3 (event) {
-		console.log (log)
-	}
-	
 }
 
+
+	function exercise3 (event) {
+		console.log (log)
+	}
 
 
 
