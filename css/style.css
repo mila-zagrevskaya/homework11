@@ -60,7 +60,9 @@ h2 {
 .result1,
 .result2,
 .result3,
-.show-code {
+.show-code1,
+.show-code2,
+.show-code3 {
 	margin: 20px auto;
 	padding: 5px 10px;
 	text-align: center;
@@ -72,7 +74,9 @@ h2 {
 	font-size: 14px;
 	z-index: 10;
 }
-.show-code {
+.show-code1,
+.show-code2,
+.show-code3 {
 	resize: none;
 	text-align: justify;
 	padding: 15px 10px 15px 35px;

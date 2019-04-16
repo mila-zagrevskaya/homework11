@@ -45,18 +45,21 @@ function exercise1 (event) {
 
 
 function exercise1 (event) {
-	fetch ('data.json')
-	.then(
-		response => response.json()
+  fetch ('data.json')
+    .then(
+	  response => response.json()
 		.then (
-			response => response.forEach (
-				item => document.querySelector(".result1").appendChild (document.createElement("img")).src = item.ref
+		  response => response.forEach (
+			item => document.querySelector(".result1").appendChild (
+			  document.createElement("img")).src = item.ref
 			)
 		)
 	)
 }
 
-
+function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}
 
 
 

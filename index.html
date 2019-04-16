@@ -13,7 +13,7 @@
 	<script src = "js/index112.js"></script>
 	<script src = "js/index113.js"></script>
 </head>
-<body>
+<body onload = "showCode (exercise1, '.show-code1 pre' )">
 	<div class="wrap">
 		<div class="wrapper">
 			<h1>Загревская Людмила <br>fea-12</h1>
@@ -36,35 +36,10 @@
 						<li>Вывести на страницу картинки и подписи к ним</li>
 					</ul>
 				</p>
-<!-- 				<textarea class= "show-code" rows = "25" disabled="disabled">
-var response = ""
 
-var request = new XMLHttpRequest ()
-request.open ( 
-	'GET', 
-	'http://ptsv2.com/t/jstestcourse/d/294170275/json'
-	)
-request.onload = function ( event ) {
-	response = this.response
-}
-request.send()
-
-var fileJson = JSON.parse (response)
-var file = JSON.parse (fileJson.Body)
-
-file.forEach (
-	function (item) {
-		var elem = document.createElement ("img")
-		elem.style = `width: 200px; height: 133.33px`
-		elem.src = item.ref
-		elem.title = item.title
-		document.body.appendChild (elem)
-	}
-)
-				</textarea> -->
-				<div class="show-code">
+				<div class="show-code1">
+					<pre></pre>
 				</div>
-				<p class="description"> </p>
 				<div class="result1"></div>
 				<button name = "btn" class="btn" onclick = "exercise1()"> Show result</button>
 				
@@ -99,5 +74,5 @@ file.forEach (
 				<button name = "btn" class="btn" onclick = "exercise3()"> Show result in console</button>
 			</div>
 		</div>
-</body>
+</body >
 </html>
