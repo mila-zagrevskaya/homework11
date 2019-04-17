@@ -74,6 +74,11 @@ h2 {
 	font-size: 14px;
 	z-index: 10;
 }
+
+.result1 img {
+	width: 250px;
+}
+
 .show-code1,
 .show-code2,
 .show-code3 {

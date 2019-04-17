@@ -50,11 +50,9 @@ function exercise1 (event) {
 	  response => response.json()
 		.then (
 		  response => response.forEach (
-			item => {document.querySelector(".result1").appendChild (
+			item => document.querySelector(".result1").appendChild (
 			  document.createElement("img")).src = item.ref
-			item.style.width = "250px"
 
-		}
 			)
 		)
 	)
