@@ -1,4 +1,4 @@
-// function exercise3 (event) {
+
 	var messages = [
 		"backspace",
 		"enter",
@@ -32,10 +32,11 @@
 	}
 	let log = sendAll (sendMessage, messages)
 
-// }
+
 	function exercise3 (event) {
 		console.log (log)
 	}
+	
 
 // function showCode(param1, param2){
 // 	document.querySelector(param2).innerHTML = param1.toLocaleString()
