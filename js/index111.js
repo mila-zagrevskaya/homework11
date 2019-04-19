@@ -51,7 +51,7 @@ function exercise1 (event) {
            .then (
                response => response.forEach (
                    item => (
-                        elem => [ { src: item.ref } , { style: `width: 250px` } ]
+                        elem => [ { src: item.ref } , { title: item.title} ]
                              .forEach ( attr => Object.assign ( elem, attr ) )
                    )(
                       document.querySelector(".result1")
