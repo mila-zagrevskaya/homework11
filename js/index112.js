@@ -12,7 +12,8 @@ function exercise2 (event) {
 
 	messages.getKey = () => {
 	    var key = new Date().toLocaleString().split(", ")[1]
-	    return log [ key ] ? log [ key + "[2]" ] ? key + "[3]" : key + "[2]" : key
+	    return log [ key ] ? log [ key + "[2]" ] ? 
+	    	key + "[3]" : key + "[2]" : key
 	}
 
 	var log = {}

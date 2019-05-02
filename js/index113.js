@@ -16,7 +16,8 @@
 			)
 		)
 
-	var sendAll = (promise = () => new Promise ( () => {} ), messages = []) => {
+	var sendAll = (promise = () => new Promise ( 
+	  () => {} ), messages = []) => {
 		const getKey = () => new Date().toLocaleString().split(", ")[1]
 		const log = {}
 		var index = 0
@@ -29,7 +30,7 @@
 		}
 		recursive ()
 		return log
-	}
+	  }
 	let log = sendAll (sendMessage, messages)
 
 
